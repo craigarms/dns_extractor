@@ -1,18 +1,8 @@
 from netmiko import ConnectHandler
-from getpass import getpass
-import logging
-import json
-from os.path import exists
 import time
 import calendar
 from scapy.all import *
 from scapy.layers.dns import DNS, DNSQR, DNSRR
-
-logging.basicConfig(filename="log.txt",
-                    filemode='a',
-                    format='%(asctime)s:%(msecs)d %(name)s %(levelname)s %(message)s',
-                    datefmt='%a, %d %b %Y, %H:%M:%S',
-                    level=logging.DEBUG)
 
 start_time = time.time()  # start time to execute the python script.
 
